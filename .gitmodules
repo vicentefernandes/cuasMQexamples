@@ -1,0 +1,6 @@
+[submodule "cuasMQ"]
+	path = cuasMQ
+	url = git@github.com:vicentefernandes/cuasMQ.git
+[submodule "include/cuasMQ"]
+	path = include/cuasMQ
+	url = git@github.com:vicentefernandes/cuasMQ.git
