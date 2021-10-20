@@ -7,6 +7,7 @@ set(CMAKE_CXX_FLAGS -pthread)
 
 add_subdirectory(include/cuasMQ)
 
+
 add_executable(cuas_consumer src/cuas_consumer_example.cpp)
 target_link_libraries(cuas_consumer cppkafka cuasMQLib)
 

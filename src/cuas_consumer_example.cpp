@@ -2,7 +2,7 @@
 // Created by vicente on 10/13/21.
 //
 
-#include "KafkaConsumer.h"
+#include <KafkaConsumer.h>
 
 std::string ts_(){
     auto value_ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::time_point_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now()).time_since_epoch()).count();
@@ -52,6 +52,7 @@ int main(){
     std::vector<Mano> mvec = {mano2, mano2};
     kc.subscribe("wifi01.status", cbts_, mvec);
     kc.subscribe("rf.status", cbts_, mvec);
+    kc.subscribe("cuas.jammer03.status", cbts_, mvec);
 
     kc.process();
 

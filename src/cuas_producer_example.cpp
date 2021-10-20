@@ -22,7 +22,7 @@ std::string ts_(){
 
 int main(){
     KafkaProducer kp("localhost:9092");
-    ;
+
 
     kp.publishNoFlush("wifi01.detections", ts_());
     kp.publishNoFlush("wifi01.status", ts_());
